@@ -13,8 +13,7 @@ function App() {
         <h1>Države</h1>
       </header>
        { <CountryList showDescription={showDescription} setShowDescription={setShowDescription} />}
-      
-    </div>
+      </div>
   );
 }
 
