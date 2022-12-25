@@ -29,27 +29,32 @@ function Description(props) {
       <h3>Country data</h3>
       <table className="grad_table">
         <tr>
-          <td className="grad_table_column bg-c2 color-white">
+          <td  className="grad_table_column ">
             <div>State name</div>
             <div>Capital city</div>
             <div>Population</div>
             <div>Country area </div>
             <div>Currencies</div>
             <div>Time Zone</div>
+        
           </td>
           <td className="grad_table_body">
             <div>{apiData.name}</div>
             <div>{apiData.capital}</div>
-            <div>{apiData.population}</div>
-            <div>{apiData.area}</div>
+            <div>{apiData.population.toLocaleString()}</div>
+            <div>{apiData.area.toLocaleString()} m2</div>
             <div>{apiData.currencies[0].code}</div>
-            <div>{apiData.timezones[0]}</div>
+            <div>{apiData.timezones[0]}</div>         
           </td>
         </tr>
       </table>
+
+      <h4>
+         <img src={apiData.flag} alt="flag" className="flag-image" />
+      </h4>
       </div>
     
-  );
+  )
 }
 
 export default Description;

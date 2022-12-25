@@ -1,75 +1,118 @@
-.nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 1%;
-  left: 0;
-  margin-top: 5%;
-  top: 15%;
-}
 
 .country-button {
   display: block;
-  width: 15%;
-  margin: 10px 0;
-  padding: 10px;
-  background-color: rgb(247, 164, 164);
-  border: solid;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
+  width: 320px;
+  height: 30px;
+  
 }
 
-.country-button:hover {
-  background-color: rgb(253, 249, 249);
+.nav {
+  margin-left: 2%;
+  left: -50%;
+  margin-top: 3%;
+  top: 15%;
 }
 
-.country-button:active {
-  background-color: rgb(204, 204, 204);
-}
 
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.App {
+  text-align: center;
 }
-
 .content {
-  width: 45%;
-  max-width: 800px;
-  border-radius: 18px;
-  box-shadow: 15px 0px 15px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-  margin-top: 5%;
+  position: relative; /* Add a position property */
+  cursor: pointer; /* Add a cursor style */
+  overflow: hidden; /* Add an overflow property */
 }
 
 .con_grad {
-  background: linear-gradient(to bottom, rgb(250, 249, 249), #d4baba);
+  background: linear-gradient(to right, #296bcd,#00b8d4); /* Add a gradient background */
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Add a box shadow */
+  font-size: 25px;
+  margin: 2%;
+  margin-left: 35%;
+  margin-right: 2%;
+  margin-top: 0%;
+
 }
+
 
 .grad_table {
-  width: 100%;
-  margin-top: 5%;
+  border: none; /* Remove the default border */
+  width: 60%; /* Make the table take up the full width of the container */
+  border-collapse: collapse; /* Remove the space between cells */
+  font-size: 20px; /* Increase the font size */
+  color: #fff; /* Change the text color */
+  margin: 20px 0; /* Add some margin to the table */
 }
 
-.grad_table td,
-.grad_table th {
-  padding: 30px;
-  text-align: left;
-  font-size: 16px;
-  margin-top: 5%;
+.grad_table td {
+  border: none; /* Remove the default border */
+  text-align: left; /* Align the text to the left */
+  padding: 8px; /* Add some padding to the cells */
+  border-bottom: 1px solid #ffffff; /* Add a bottom border to the cells */
 }
 
-.grad_table_column {
-  width: 20%;
-  font-weight: bold;
+.grad_table tr:last-child td {
+  border-bottom: none; /* Remove the bottom border from the last row */
 }
 
-.bg-c2 {
-  background-color: #212020;
-  border-radius: 10%;
+.grad_table td:first-child {
+  width: 200px; /* Make the first column wider */
+  font-weight: bold; /* Make the text bold */
 }
 
-.color-white {
-  color: #fff;
+.grad_table_body {
+  width: 65%; /* Make the second column take up the full width */
+}
+
+
+
+input[type="text"] {
+  display: block;
+ 
+  height:26px;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 17px;
+  border-radius: 3px;
+  text-indent: 5px;
+  padding-bottom: 0.5%;
+  margin-left: 1.5%;
+  color: #7B828B;
+  width: 16.8%;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  font-size: 15px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.2),
+      0 1px 1px rgba(255, 255, 255, 0.2);
+  
+  
+}
+button[type="submit" ] {
+  color: #FFF;
+  background-color: #2da6c1;
+  border: 0;
+  padding: 7px 30px;
+  font-size: 17px;
+  text-transform: capitalize;
+  height:36px;
+  margin: 20px auto;
+  border-radius: 3px;
+  margin-left: 5%;
+  margin-top: 0%;
+  
+}
+
+
+
+
+.flag-image {
+  max-width: 150px;
+  max-height: 150px;
+  display: block; /* Change the display property */
+  margin: 20px auto; /* Center the image */
+  border-radius: 60%; /* Add a border radius */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 15px 15px 0 rgba(0, 0, 0, 0.19); /* Add a box shadow */
 }

@@ -1,19 +1,21 @@
-import React, { useState } from "react";
-import './App.css';
-import CountryList from "./components/CountryList";
-import	SignIn from "./components/auth/SignIn";
-import SignUp from "./components/auth/SignUp";
-import AuthDetails from "./components/auth/AuthDetails";
+import React  from "react";
+import {Route, Routes} from "react-router-dom"
+import Home from "./pages/Home"
+import SignInOrSignUp from "./pages/SignInOrSignUp"
 
 function App() {
   
+ 
   return (
-    <div className="App">
-     <SignIn/>
-     <SignUp/>
-     <AuthDetails/>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home/>} />
+      <Route path="/SignInOrSignUp" element={<SignInOrSignUp/>} />
+      
+
+    </Routes>
   );
 }
+
+
 
 export default App;

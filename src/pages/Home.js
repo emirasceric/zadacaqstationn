@@ -1,20 +1,25 @@
 import React, { useState } from "react";
-import './App.css';
-import CountryList from "./components/CountryList";
-import	SignIn from "./components/auth/SignIn";
+import "../App.css";
+import CountryList from "../components/CountryList";
+import AuthDetails from "../components/auth/AuthDetails";
 
-function App() {
+function Home() {
   const [showDescription, setShowDescription] = useState(false);
- 
-
   return (
-    <div className="Countries">
+    <div className="vremenska">
       <header>
-        <h1>Države</h1>
+        <div className="title">
+          {" "}
+          <h1>Countries</h1>
+        </div>
       </header>
-       { <CountryList showDescription={showDescription} setShowDescription={setShowDescription} />}
-      </div>
+      <AuthDetails />
+      <CountryList
+        showDescription={showDescription}
+        setShowDescription={setShowDescription}
+      />
+    </div>
   );
 }
 
-export default App;
+export default Home;
