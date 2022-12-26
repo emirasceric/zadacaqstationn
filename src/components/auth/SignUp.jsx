@@ -2,6 +2,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
 import { auth } from "../../firebase";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
@@ -21,7 +22,7 @@ const SignUp = () => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         console.log(userCredential);
-        navigate("/");
+        navigate("/SignU");
       })
       .catch((error) => {
         console.log(error);
@@ -54,8 +55,13 @@ const SignUp = () => {
         ></input>
 
         {errorMessage !== "" && <p className="error-message">{errorMessage}</p>}
-        <button type="signUp">Sign Up</button>
+        <button type="signUp">Register</button>
       </form>
+      <p>You have an account?
+      <button value="Sign Up">
+          
+  <Link to="/SignInOrSignUp">Click to Sign In</Link>
+</button></p>
     </div>
   );
 };

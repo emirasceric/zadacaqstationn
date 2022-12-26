@@ -25,7 +25,7 @@ function Description(props) {
   }
 
   return (
-    <div className="content con_grad">
+    <div className="container">
       <h3>Country data</h3>
       <table className="grad_table">
         <tr>
