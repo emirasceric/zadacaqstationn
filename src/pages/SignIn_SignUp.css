@@ -33,6 +33,7 @@ body {
   }
   
   button[type="signUp" ] {
+
     color: #FFF;
     background-color: #2DC185;
     border: 0;
@@ -40,10 +41,27 @@ body {
     font-size: 17px;
     text-transform: capitalize;
     height:36px;
+    width: 105%;
     margin: 20px auto;
     border-radius: 3px;
-    margin-left: 47%
+    margin-left: 44%;
+    width: 205px;
     
+  }
+  button[type="sign Up1" ] {
+    color: #FFF;
+    background-color: #796a6a;
+    border: 0;
+    padding: 7px 30px;
+    font-size: 17px;
+    text-transform: capitalize;
+    height:36px;
+    width: 105%;
+    margin: 20px auto;
+    border-radius: 3px;
+    margin-left: 44%;
+    width: 205px;
+    display: block;
   }
 
   button[type="logIn" ] {
@@ -56,7 +74,20 @@ body {
     height:36px;
     margin: 20px auto;
     border-radius: 3px;
-    margin-left: 47%
+    position: fixed ; 
+    cursor: pointer;
+    margin-top: 5%;
+    margin-left: 44%;
+    width: 205px;
+
     
   }
-  
+  button:hover {
+    background-color: #3e8e41;
+  }
+
+  h6 {
+    font-size: 17px;
+    margin-left: 44%;
+  }
+ 

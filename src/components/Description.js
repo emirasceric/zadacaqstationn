@@ -36,6 +36,7 @@ function Description(props) {
             <div>Country area </div>
             <div>Currencies</div>
             <div>Time Zone</div>
+            <div>Region</div>
         
           </td>
           <td className="grad_table_body">
@@ -44,7 +45,9 @@ function Description(props) {
             <div>{apiData.population.toLocaleString()}</div>
             <div>{apiData.area.toLocaleString()} m2</div>
             <div>{apiData.currencies[0].code}</div>
-            <div>{apiData.timezones[0]}</div>         
+            <div>{apiData.timezones[0]}</div>   
+            <div>{apiData.region}</div>
+      
           </td>
         </tr>
       </table>

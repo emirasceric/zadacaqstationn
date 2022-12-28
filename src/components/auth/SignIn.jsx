@@ -40,10 +40,11 @@ const SignIn = () => {
         ></input>
         <button type="logIn">Log In</button>
       </form>
-      <p>Don't have an account?
-      <button value="Sign Up">
+      <p>
+      <p1>Don't have an account?</p1>
+      <button type="sign Up1">
           
-  <Link to="/SignUp">Click to Sign Up!</Link>
+  <Link to="/SignUp"> Click to Sign Up! </Link>
 </button></p>
 
     </div>

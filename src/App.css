@@ -3,8 +3,20 @@
   display: block;
   width: 320px;
   height: 30px;
+   background-color: #fcfcfca4; /* Green */
+  padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ cursor: pointer;
+ transition-duration: 0.4s;
+ 
+
   
 }
+button:hover {
+  background-color: #3e8e41;
+}
+
 
 .nav {
   margin-left: 2%;
@@ -64,7 +76,6 @@ html {
 
 input[type="text"] {
   display: block;
- 
   height:26px;
   text-align: center;
   margin: 20px auto;
@@ -72,9 +83,9 @@ input[type="text"] {
   border-radius: 3px;
   text-indent: 5px;
   padding-bottom: 0.5%;
-  margin-left: 1.5%;
-  color: #7B828B;
-  width: 16.8%;
+  margin-left: 0px;
+  color: #8b7b7b;
+  width: 296px;
   background: rgba(0, 0, 0, 0.3);
   padding: 10px;
   font-size: 15px;
@@ -113,7 +124,7 @@ button[type="submit" ] {
 .container {
   position: absolute;
   left: 30%;
-  top: 15%;
+  top: 24%;
   margin: 5%;
   border: 5px solid rgb(255, 255, 255);
   border-spacing: 2rem;
@@ -128,3 +139,5 @@ button[type="submit" ] {
   margin-right: 5%;
   margin-top: 0%;
 }
+
+

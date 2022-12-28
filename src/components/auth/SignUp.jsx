@@ -57,11 +57,12 @@ const SignUp = () => {
         {errorMessage !== "" && <p className="error-message">{errorMessage}</p>}
         <button type="signUp">Register</button>
       </form>
-      <p>You have an account?
-      <button value="Sign Up">
-          
-  <Link to="/SignInOrSignUp">Click to Sign In</Link>
-</button></p>
+      <p> 
+        <h6>You have an account? </h6>
+        <button type="Sign Up1">
+          <Link to="/SignInOrSignUp">Click to Sign In</Link>
+        </button>
+      </p>
     </div>
   );
 };
