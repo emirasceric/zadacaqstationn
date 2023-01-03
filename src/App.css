@@ -139,5 +139,22 @@ button[type="submit" ] {
   margin-right: 5%;
   margin-top: 0%;
 }
+.SignedOut {
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  border: 0;
+  padding: 7px 30px;
+  font-size: 15px;
+  text-transform: capitalize;
+  height:30px;
+  margin: 20px auto;
+  border-radius: 3px;
+  margin-left: 87%;
+  margin-top: 0%;
+}
+.SignedInas{
+  color: rgb(255, 255, 255);
+  margin-left: 85%;
+}
 
 

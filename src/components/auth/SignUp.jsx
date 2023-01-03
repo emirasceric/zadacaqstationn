@@ -18,14 +18,19 @@ const SignUp = () => {
       return;
     }
     setErrorMessage("");
-
+    
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         console.log(userCredential);
-        navigate("/SignU");
+        navigate("/SignUp");
+        setErrorMessage("You are registered!");
       })
       .catch((error) => {
         console.log(error);
+        if (error.code === "auth/email-already-in-use" ){
+          setErrorMessage("Racun se vec koristi");
+        } 
+
       });
   };
 
@@ -57,12 +62,12 @@ const SignUp = () => {
         {errorMessage !== "" && <p className="error-message">{errorMessage}</p>}
         <button type="signUp">Register</button>
       </form>
-      <p> 
-        <h6>You have an account? </h6>
-        <button type="Sign Up1">
-          <Link to="/SignInOrSignUp">Click to Sign In</Link>
-        </button>
-      </p>
+     
+      <p className="donthaveaaccount">You have an account? </p>
+
+      <button type="Sign Up2">
+        <Link to="/SignInOrSignUp">Click to Sign In</Link>
+      </button>
     </div>
   );
 };
