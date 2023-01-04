@@ -13,6 +13,24 @@ const SignUp = () => {
 
   const signUp = (e) => {
     e.preventDefault();
+
+    // Add check for password length
+  if (password.length < 8) {
+    setErrorMessage("Password must be at least 8 characters long");
+    return;
+    
+  }
+  // Add check for presence of uppercase letter
+  if (!/[A-Z]/.test(password)) {
+    setErrorMessage("Password must contain at least one uppercase letter");
+    return;
+  }
+  if (!/[!@#$%^&*)(+=._-]/.test(password)) {
+    setErrorMessage("Password must contain at least one special character (!@#$%^&*)(+=._-)");
+    return;
+  }
+
+
     if (password !== confirmPassword) {
       setErrorMessage("Passwords do not match");
       return;
