@@ -11,11 +11,14 @@ import SignUp from "./components/auth/SignUp";
 function App() {
   
   return (
-   <Routes>
-      <Route path="/SignInOrSignUp" element={<SignInOrSignUp/>} />
-      <Route path="/" element={<Home/>} />
-      <Route path="/SignUp" element={<SignUp/>} />
-    </Routes>
+    <Routes>
+    <Route path="/SignInOrSignUp" element={<SignInOrSignUp/>} />
+    <Route path="/Countries" element={<Home/>} />
+    <Route path="/SignUp" element={<SignUp/>} />
+    <Route path="*" element={<SignInOrSignUp/>} />
+  </Routes>
+  
+  
   );
 }
 

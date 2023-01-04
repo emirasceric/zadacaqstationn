@@ -15,7 +15,7 @@ const SignIn = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         console.log(userCredential);
-        navigate("/");
+        navigate("/Countries");
         
       })
       .catch((error) => {
@@ -56,7 +56,10 @@ const SignIn = () => {
 
       <div className="errorMessage">{errorMessage && <p>{errorMessage}</p>}</div>
     </div>
-  );
+    
+     
+  )
+  
 };
 
 export default SignIn;
