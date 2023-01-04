@@ -21,7 +21,7 @@ const SignIn = () => {
       .catch((error) => {
         console.log(error);
         if (error.code === "auth/user-not-found" ){
-          setErrorMessage("Niste registrovani!");
+          setErrorMessage("You are not registred!");
         } 
       });
   };
