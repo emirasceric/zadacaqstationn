@@ -57,6 +57,8 @@ function CountryList({ showDescription, setShowDescription }) {
       setNewCountry(""); // reset the value of the new country
     } else {
       console.log("niste dobro unijeli"); // display an error message or do something else to indicate that the input is invalid
+    
+    
     }
     createUser();
     getUsers(); // call the createUser function to add the new user to the database
